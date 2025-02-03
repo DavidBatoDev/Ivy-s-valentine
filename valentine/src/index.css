@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Shadows+Into+Light&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.game-block {
+  margin: 0;
+  padding: 0;
+  width: 1.5em;
+  height: 1.5em;
+  border: 2px solid rgb(27, 26, 26)
+}
+.piece-i {
+  background-color: rgb(55, 170, 208);
+}
+.piece-j {
+  background-color: blue;
+}
+.piece-l {
+  background-color: orange;
+}
+.piece-o {
+  background-color: yellow;
+}
+.piece-s {
+  background-color: rgb(19, 173, 19);
+}
+.piece-t {
+  background-color: violet;
+}
+.piece-z {
+  background-color: red;
+}
+.piece-preview {
+  background-color: #eee;
+  opacity: 0.3;
+}
