@@ -23,7 +23,7 @@ const Homepage = () => {
             setTimeout(() => setSecondModalButtons(true), 2000) // Delay to ensure state update
         } else if (thirdModal) {
             setThirdModal(false)
-            setTimeout(() => navigate('/tetris'), 100) 
+            setTimeout(() => navigate('/ivy-tetris'), 100) 
         } else if (noThirdModal) {
             setNoThirdModal(false)
             setTimeout(() => navigate('/tetris'), 100) 
@@ -34,21 +34,26 @@ const Homepage = () => {
   }, [firstModal, secondModal, thirdModal, noThirdModal])
 
 
-  useEffect(() => {
-        const audio = new Audio('/audio/like-the-movies.mp3');
-        audio.play();
-        audio.volume = 0.1; // Set the volume to 10%
-        audio.loop = true; // Loop the audio
+  // useEffect(() => {
+  //       const audio = new Audio('/audio/like-the-movies.mp3');
+  //       audio.play();
+  //       audio.volume = 0.1; // Set the volume to 10%
+  //       audio.loop = true; // Loop the audio
 
-        return () => {
-            audio.pause();
-            audio.currentTime = 0; // Reset the audio
-        };
-    }, []);
+  //       return () => {
+  //           audio.pause();
+  //           audio.currentTime = 0; // Reset the audio
+  //       };
+  //   }, []);
 
     const handleYesImJasmin = () => {
-        setSecondModal(false)
-        setTimeout(() => setThirdModal(true), 100) // Delay to ensure state update
+      // play audio
+      const audio = new Audio('/audio/like-the-movies.mp3');
+      audio.play();
+      audio.volume = 0.1; // Set the volume to 10%
+      audio.loop = true; // Loop the audio
+      setSecondModal(false)
+      setTimeout(() => setThirdModal(true), 100) // Delay to ensure state update
     }
 
   return (
@@ -87,7 +92,7 @@ const Homepage = () => {
                     <div className="flex gap-5">
                     <button 
                         className="bg-black text-white px-5 py-2 rounded-lg"
-                        onClick{handleYesImJasmin}
+                        onClick={handleYesImJasmin}
                     >
                         Yes
                     </button>

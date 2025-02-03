@@ -17,7 +17,7 @@ const TetrisPage = () => {
     return (
         <div className='bg-primary h-screen w-screen justify-center items-center flex flex-col'>
         <div className='absolute w-screen h-screen bg-black opacity-60'></div>
-        <h1 className='z-10 font-secondary text-xl text-white'>Tetrizz</h1>
+        <h1 className='z-10 font-secondary text-xl text-white'>Tetrix</h1>
         <div className='z-10'>
             <Tetris
             keyboardControls={{
