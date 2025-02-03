@@ -76,7 +76,7 @@ const Homepage = () => {
         onClose={() => setIsModalOpen(false)}
       >
         <div className='flex flex-col gap-5 justify-center items-center h-full w-full'>
-            <TextTypeAnimation className={"text-black text-5xl"} text={"Are you John hustin Lorenzo?"} />
+            <TextTypeAnimation className={"text-black text-5xl"} text={"Are you Jasmin Ivy Fedilo?"} />
             <motion.div
                 initial={{ y: '100%', opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
