@@ -66,7 +66,7 @@ const Homepage = () => {
         isOpen={firstModal}
         noCloseButton={true}
       >
-        <TextTypeAnimation className={"text-black text-5xl"} text={"Hello and Happy Valentines Week!"} />
+        <TextTypeAnimation className={"text-black text-5xl"} text={"Hello and Happy Valentines Week! ❤️"} />
       </BottomToCenterAnimation>
 
         {/* Second Modal */}

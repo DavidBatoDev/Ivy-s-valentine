@@ -10,7 +10,7 @@ const IvyTetris = () => {
   // Start the timer countdown
   useEffect(() => {
     if (timer > 0) {
-        if (linesCleared >= 3) {
+        if (linesCleared >= 10) {
             navigate('/youre-ivy'); // Navigate to you're-ivy if 10 lines are cleared
         }
         const countdown = setInterval(() => {
