@@ -27,7 +27,7 @@ const TextTypeAnimation = ({ text, className }) => {
       variants={container}
       initial="hidden"
       animate="visible"
-      className={`text-2xl font-bold font-secondary ${className}`}
+      className={`text-center text-2xl font-bold font-secondary ${className}`}
     >
       {text.split("").map((char, index) => (
         <motion.span key={index} variants={letter}>
