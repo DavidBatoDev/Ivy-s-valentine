@@ -279,7 +279,7 @@ const OkayYoureIvy = () => {
       </BottomToCenterAnimation>
 
       <BottomToCenterAnimation isOpen={thirteenthModal} noCloseButton={true}>
-        <TextTypeAnimation className="text-black text-2xl" text="Can't wait to spend the rest of the day with you. I've got some surprises waiting for us. 😉" />
+        <TextTypeAnimation className="text-black text-2xl" text="Can't wait to spend the rest of my days with you. I've got some surprises waiting for us. 😉" />
       </BottomToCenterAnimation>
 
       <BottomToCenterAnimation isOpen={fourteenthModal} noCloseButton={true}>
