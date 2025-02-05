@@ -290,13 +290,7 @@ const OkayYoureIvy = () => {
 
       <BottomToCenterAnimation isOpen={fifteenthModal} noCloseButton={true}>
         <div className="flex flex-col gap-4 items-center">
-          <TextTypeAnimation className="text-black text-5xl" text="Read More..." />
-          <button
-            onClick={navigateToNext}
-            className="bg-pink-500 text-white px-6 py-3 rounded-lg mt-4 text-xl hover:bg-pink-600 transition-colors"
-          >
-            Continue ❤️
-          </button>
+          <TextTypeAnimation className="text-black text-5xl" text="Comeback to this website after feb 14... 😊" />
         </div>
       </BottomToCenterAnimation>
     </div>
