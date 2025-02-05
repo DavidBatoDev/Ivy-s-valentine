@@ -71,7 +71,12 @@ const OkayYoureIvy = () => {
       setFourthModal(false)
       setFifthModal(true)
       setError('')
-    } else {
+    } else if (normalizedInput === 'Ivy' || normalizedInput === 'me' || normalizedInput === 'ako') {
+      setFourthModal(false)
+      setFifthModal(true)
+      setError('syempre naman pero hindi yan ang sagot')
+    } 
+    else {
       setError('Wrong answer! Try again.')
     }
   }
@@ -97,7 +102,7 @@ const OkayYoureIvy = () => {
 
   const handleDogSubmit = (e) => {
     e.preventDefault()
-    if (dogInput.toLowerCase().trim() === 'chuki') {
+    if (dogInput.toLowerCase().trim() === '17' || dogInput.toLowerCase().trim() === '17 years old') {
       setSixthModal(false)
       setSeventhModal(true)
       setTimeout(() => {
@@ -105,8 +110,11 @@ const OkayYoureIvy = () => {
         setEighthModal(true)
       }, 5000)
       setError('')
-    } else {
-      setError('Wrong name! Try again.')
+    } else if (dogInput.toLowerCase().trim() === '20' || dogInput.toLowerCase().trim() === '23' || dogInput.toLowerCase().trim() === '21') {
+      setError('Hmm.. Tama naman siguro')
+    }
+    else {
+      setError('Wrong age! Try again.')
     }
   }
 
@@ -213,7 +221,7 @@ const OkayYoureIvy = () => {
       {/* Sixth Modal */}
       <BottomToCenterAnimation isOpen={sixthModal} noCloseButton={true}>
         <div className="flex flex-col gap-4 items-center">
-          <TextTypeAnimation className="text-black text-5xl" text="What is my rankin--- Joke lang, the name of my dog?" />
+          <TextTypeAnimation className="text-black text-5xl" text="What is my rankin--- How old are you?" />
           <form onSubmit={handleDogSubmit} className="flex flex-col gap-2">
             <input
               type="text"

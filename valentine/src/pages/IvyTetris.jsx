@@ -28,7 +28,7 @@ const IvyTetris = () => {
     window.addEventListener('resize', checkDeviceType);
 
     if (timer > 0) {
-      if (linesCleared >= 3) {
+      if (linesCleared >= 5) {
         // Save winning state to local storage
         localStorage.setItem('tetris_won', 'true');
         navigate('/youre-ivy'); // Navigate to you're-ivy if 10 lines are cleared
@@ -91,11 +91,11 @@ const IvyTetris = () => {
     <div className='bg-primary h-screen w-screen justify-center items-center flex flex-col'>
       {isMobile || isTablet ? (
         <div className='z-10 absolute top-44 w-20 text-md left-5 font-secondary text-white'>
-          Try to clear 10 lines in 40 seconds
+          Try to clear 5 lines in 40 seconds
         </div>
       ) : (
         <div className='z-10 absolute top-10 left-5 font-secondary text-2xl text-white'>
-          Try to clear 10 lines in 40 seconds
+          Try to clear 5 lines in 40 seconds
         </div>
       )}
       <div className='absolute w-screen h-screen bg-black opacity-60'></div>
