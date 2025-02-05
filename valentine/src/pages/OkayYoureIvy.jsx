@@ -71,9 +71,7 @@ const OkayYoureIvy = () => {
       setFourthModal(false)
       setFifthModal(true)
       setError('')
-    } else if (normalizedInput === 'Ivy' || normalizedInput === 'me' || normalizedInput === 'ako') {
-      setFourthModal(false)
-      setFifthModal(true)
+    } else if (normalizedInput === 'Ivy' || normalizedInput === 'me' || normalizedInput === 'ako' || normalizedInput === 'Jasmin Ivy Fedilo') {
       setError('syempre naman pero hindi yan ang sagot')
     } 
     else {
