@@ -17,7 +17,8 @@ const App = () => {
     <Router>
       <Routes>
         <Route path="/" element={<WelcomeSequence />} />
-        <Route path="/games" element={<Games />} />
+        <Route path="/games" element={<ChessGame />} />
+        <Route path="/chess" element={<Homepage />} />
         <Route path="/loveLetter1" element={<LoveLetter />} />
         <Route path="/thingsILike" element={<ThingsILike />} />
         <Route path="/memories" element={<Memories />} />
